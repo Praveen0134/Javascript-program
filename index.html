@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+      // Problem 1 inserting elements at a specific index in an Array
+        let arr=[1,2,3,4,5,6]
+        let index =3;
+        let arra=8
+        arr.splice(3,0,arra)
+        console.log(arr);
+    // Problem 2 array rotation 
+    let arr1=[1,2,3,4,5]
+    let rot =4;
+    while(rot>0){
+        let temp=arr1[0]
+    for(let i=0;i<arr1.length-1;i++){
+       arr1[i]=arr1[i+1]  
+    }
+    arr1[arr1.length-1]=temp
+    rot--;
+}
+    console.log(arr1)
+    // Problem 3 removing array elements by index
+    let arr2=["hi" ,"hello","hey","how are you"]
+    arr2.splice(1,1);
+    console.log(arr2);
+    // Problem 4 largest words in the string
+    let arr3="hi hello welcome how are you"
+    let arr4=arr3.split(" ");
+    let tem ="";
+    for(let i=0;i<arr4.length;i++){
+        if(arr4[i].length>tem.length){
+            tem=arr4[i] 
+        }
+    }
+    console.log(tem)
+    // Problem 5 
+    let arr5=["i","hello","hey","welcome"]
+    let ans=arr5.find(arr5 =>arr5.startsWith("h"))
+    console.log(ans)
+     </script>
+</body>
+</html>
